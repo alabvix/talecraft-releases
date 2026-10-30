@@ -6,7 +6,7 @@ As builds estão disponíveis para **Windows**, **Linux** e **macOS**.
 
 ## Baixar
 
-Abra a [última release](../../releases/latest) e baixe o arquivo da sua
+Abra a [lista de releases](../../releases) e baixe o arquivo da sua
 plataforma:
 
 - **Windows:** `TaleCraft_0.1.0_x64-setup.exe` (recomendado) ou
