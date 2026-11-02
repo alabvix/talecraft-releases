@@ -7,7 +7,9 @@ As builds estão disponíveis para **Windows**, **Linux** e **macOS**.
 ## Baixar
 
 Abra a [lista de releases](../../releases) e baixe o arquivo da sua
-plataforma:
+plataforma. A **build de teste 3** é a mais recente e traz o detalhe inline do
+personagem no livro, o painel de capítulos em duas abas e os gráficos também no
+Painel do Livro e na ficha do personagem.
 
 - **Windows:** `TaleCraft_0.1.0_x64-setup.exe` (recomendado) ou
   `TaleCraft_0.1.0_x64_en-US.msi`.
@@ -77,10 +79,19 @@ Nenhum dado é enviado para servidores.
 
 - **Livros:** Meus Livros, dados gerais, abas Resumo, Sinopse, Tema, Conflito e
   Voz Narrativa.
-- **Personagens do livro:** elenco, papéis, vínculos e ficha global.
+- **Personagens do livro:** elenco em cards ou lista paginada, com a quantidade
+  e os números dos capítulos de cada personagem. O detalhe abre abaixo da grade
+  em quatro abas: **Dados Globais do Personagem**, **Personagem no Livro**,
+  **Gráfico de Evolução** e **Eventos**.
+- **Ficha global do personagem:** vínculos com livros, contagem real de livros e
+  a **Curva de arco em cada livro**, com seleção do livro.
 - **Capítulos:** quadro com Esboço, Rascunho, Revisão e Finalizado, criação,
-  edição, Motivo do Tipo, Motivo do Evento e arrastar entre status.
-- **Gráficos:** Curva de Progressão por Capítulo e Evolução de Personagem.
+  edição e arrastar entre status. O painel tem duas abas — **Dados do Capítulo**
+  e **Personagens do Capítulo** — com Motivo do Tipo, Meta, Cenário Descritivo,
+  miniatura do retrato, Nome - Papel, Evento, Tipo de Evento e Motivo.
+- **Gráficos:** Curva de Progressão por Capítulo e Evolução de Personagem. A
+  curva também aparece no **Painel do Livro**, e a evolução por livro aparece na
+  ficha do personagem e na aba **Gráfico de Evolução** do elenco.
 
 ## Limitações conhecidas
 
