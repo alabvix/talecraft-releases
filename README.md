@@ -11,6 +11,9 @@ plataforma. A **build de teste 3** é a mais recente e traz o detalhe inline do
 personagem no livro, o painel de capítulos em duas abas e os gráficos também no
 Painel do Livro e na ficha do personagem.
 
+O histórico das builds, com a base dos posts do Substack, fica em
+[CHANGELOG.md](CHANGELOG.md).
+
 - **Windows:** `TaleCraft_0.1.0_x64-setup.exe` (recomendado) ou
   `TaleCraft_0.1.0_x64_en-US.msi`.
 - **Linux:** `TaleCraft_0.1.0_amd64.AppImage` (portátil) ou
