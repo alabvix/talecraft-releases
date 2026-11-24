@@ -7,18 +7,18 @@ As builds estão disponíveis para **Windows**, **Linux** e **macOS**.
 ## Baixar
 
 Abra a [lista de releases](../../releases) e baixe o arquivo da sua
-plataforma. A **build de teste 3** é a mais recente e traz o detalhe inline do
-personagem no livro, o painel de capítulos em duas abas e os gráficos também no
-Painel do Livro e na ficha do personagem.
+plataforma. A **build de teste 4** é a mais recente e traz o mundo do livro com
+vários mundos, as localidades em árvore, os mapas por escala (incluindo cômodos
+e portas) e o painel de capítulos com **Dados Complementares** e vários cenários.
+Por enquanto, esta build está publicada **somente para Windows**; os instaladores
+de Linux e macOS serão adicionados quando estiverem prontos.
 
 O histórico das builds, com a base dos posts do Substack, fica em
 [CHANGELOG.md](CHANGELOG.md).
 
 - **Windows:** `TaleCraft_0.1.0_x64-setup.exe` (recomendado) ou
   `TaleCraft_0.1.0_x64_en-US.msi`.
-- **Linux:** `TaleCraft_0.1.0_amd64.AppImage` (portátil) ou
-  `TaleCraft_0.1.0_amd64.deb` (Debian/Ubuntu).
-- **macOS:** `TaleCraft_0.1.0_universal.dmg` (Intel e Apple Silicon).
+- **Linux e macOS:** em preparação para esta build.
 - **SHA256SUMS.txt** — confira a integridade do download.
 
 ## Instalar no Windows
@@ -33,7 +33,7 @@ O histórico das builds, com a base dos posts do Substack, fica em
 Requisitos: **Windows 10 ou 11, 64 bits**. O instalador cuida do WebView2
 quando necessário.
 
-## Instalar no Linux
+## Instalar no Linux (quando publicado)
 
 AppImage (não precisa instalar):
 
@@ -51,7 +51,7 @@ sudo apt install ./TaleCraft_0.1.0_amd64.deb
 Requisitos: distribuição 64 bits com WebKitGTK 4.1 (Ubuntu 22.04+, Debian 12+
 ou equivalente).
 
-## Instalar no macOS
+## Instalar no macOS (quando publicado)
 
 1. Abra o `TaleCraft_0.1.0_universal.dmg`.
 2. Arraste o **TaleCraft** para a pasta **Applications**.

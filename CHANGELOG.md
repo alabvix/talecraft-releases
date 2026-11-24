@@ -13,9 +13,12 @@ Histórico das builds de teste do TaleCraft, uma seção por versão/build.
 
 ---
 
-## 0.1.0 build 4 — não publicado
+## 0.1.0 build 4 — publicado em 24/11/2026 (Windows; Linux e macOS em preparação)
 
-**Foco:** o **mundo do livro** e as **localidades** do Worldbuilding.
+**Foco:** o **mundo do livro**, as **localidades**, os **mapas do mundo** e o
+**painel de capítulos**. Por enquanto, os instaladores publicados são de
+**Windows**; **Linux** e **macOS** entram nesta mesma release quando estiverem
+prontos.
 
 ### Destaques para o post
 
@@ -24,6 +27,11 @@ Histórico das builds de teste do TaleCraft, uma seção por versão/build.
 2. **As localidades viraram um mapa do cenário.** Cada uma tem imagem, tipo e
    pode ficar dentro de outra, formando árvores como Cidade › Bairro › Casa ›
    Quarto.
+3. **O mundo ganhou mapas por escala.** Mundo, Região, Cidade, Bairro e
+   Prédio/Casa têm editor próprio, com cômodos, portas e plantas.
+4. **O capítulo ficou mais organizado.** A nova aba **Dados Complementares**
+   separa Foreshadowing, Plot Twist, Cliffhanger, Punch e K.O, e o cenário aceita
+   vários lugares no mesmo capítulo.
 
 ### Livro e mundo
 
@@ -35,37 +43,67 @@ Histórico das builds de teste do TaleCraft, uma seção por versão/build.
   agora o livro pode se passar em vários, e o mesmo mundo pode servir a vários
   livros.
 - **Associar mundos:** grade paginada com busca, seleção múltipla e selo **Já
-  associado**; remover um mundo do livro limpa, com aviso, o cenário dos
+  associado**; remover um mundo do livro limpa, com aviso, os cenários dos
   capítulos que usavam localidades dele.
 - **Criar entradas pelo livro:** a categoria do mundo aceita **Nova entrada**
   direto na seção do livro, sem sair para o nível raiz.
 - **Cenário dos capítulos:** o campo **Cenário Worldbuilding** lista as
-  localidades de todos os mundos do livro, agrupadas por mundo, e mostra o
-  **caminho completo** (ex.: `Porto › Centro › Solar › Quarto`).
+  localidades de todos os mundos do livro, agrupadas por mundo, com **caminho
+  completo** e **vários cenários** por capítulo.
 - **Métricas reais:** **Entradas de worldbuilding** no Painel do Livro e nos
-  cards de Meus Livros deixam de ser 0 e refletem os mundos associados.
+  cards de Meus Livros refletem os mundos associados.
 - **Mundos no nível raiz:** os cards e a lista mostram os livros que usam cada
-  mundo; o painel **Vínculos com livros** mostra a contagem e leva à nova aba
+  mundo; o painel **Vínculos com livros** mostra a contagem e leva à aba
   **Livros**, com os títulos clicáveis.
-- **Abrir mundo:** a aba do mundo no livro leva ao detalhe do mundo no nível raiz.
 
 ### Localidades
 
 - **Imagem da localidade:** JPG, PNG ou WEBP até **4 MB**, com miniatura na
   árvore e prévia na janela de edição.
-- **Tipo da Localidade:** lista fechada com **49 tipos** — de **Arena** e
-  **Armazém** a **Vila** e **Vilarejo**, passando por **Cidade**, **Casa**,
-  **Castelo**, **Caverna**, **Igreja**, **Mar**, **Palácio**, **Praça**,
-  **Ruína** e **Templo** —, em ordem alfabética, além de **Não definido**.
-- **Hierarquia:** uma localidade pode ficar dentro de outra e conter várias,
-  em qualquer nível (Cidade → Bairro → Casa → Quarto; Taverna dentro de Cidade;
-  Cômodo dentro de Casa). A contenção é livre por tipo e o sistema recusa ciclos.
+- **Tipo da Localidade:** lista fechada com **49 tipos**, em ordem alfabética,
+  além de **Não definido**.
+- **Hierarquia:** uma localidade pode ficar dentro de outra e conter várias, em
+  qualquer nível (Cidade → Bairro → Casa → Quarto; Taverna dentro de Cidade;
+  Cômodo dentro de Casa), sem ciclos.
 - **Árvore navegável:** a aba **Localidades** mostra a árvore com miniatura,
   nome, tipo, contador de sublocalidades e expandir/recolher, paginada de **20
   em 20** sem cortar uma subárvore entre páginas.
-- **Editar e mover:** trocar o pai move a localidade e todos os seus
-  descendentes; a lista de pais esconde a própria localidade e os descendentes.
-- **No PDF do mundo:** o documento passa a mostrar o **Tipo** de cada localidade.
+- **Raiz do mundo:** cada mundo tem uma localidade raiz do tipo **Mundo**, fixa
+  no topo e fora dos mapas, do cenário e do PDF.
+- **Ícone sem imagem:** quando a localidade não tem imagem, a árvore mostra o
+  ícone do Tipo no estilo do Tipo do Mundo.
+- **No PDF do mundo:** o documento mostra o **Tipo** de cada localidade.
+
+### Mapas do Mundo
+
+- **Mapas por escala:** vários mapas por mundo em **Mundo**, **Região**,
+  **Cidade**, **Bairro** e **Prédio/Casa**, com âncora opcional e cinco fundos
+  (Papel, Grade, Hex, Blueprint e Topográfico).
+- **Editor:** posiciona localidades (arrastar ou criar pelo canvas), desenha
+  polígonos, cria ligações rotuladas, apaga, desfaz/refaz e navega com pan/zoom.
+- **Edição de polígono:** move a forma pelo interior, redimensiona pelas
+  arestas e ajusta um vértice pelo nó.
+- **Prédio/Casa:** a localidade vira um **cômodo retangular** movido e
+  redimensionado por oito alças; a ferramenta **Porta** substitui
+  Polígono/Ligação e as portas acompanham as paredes.
+- **Plantas e filtros:** Cidade e Bairro usam plantas; todas as escalas filtram
+  os tipos de localidade permitidos.
+- **Localidade presa ao mapa:** só **Mundo** e **Região** compartilham
+  localidades entre si; as demais ficam exclusivas do mapa.
+- **No livro e no PDF:** a aba **Mapas** da seção Worldbuilding do livro lê os
+  mapas e o **PDF do Mundo** ganha a seção **Mapas**.
+
+### Capítulos
+
+- **Dados Complementares:** a segunda aba reúne Foreshadowing, Plot Twist,
+  Cliffhanger, Punch e K.O, com o K.O ao lado do Punch e o mesmo **Salvar**.
+- **Vários cenários:** o campo **Cenário Worldbuilding** permite adicionar e
+  remover localidades, mantendo a lista na ordem de inclusão.
+- **Remoção de mundo:** ao desassociar um mundo, todos os cenários dele saem dos
+  capítulos e os cenários dos outros mundos permanecem.
+- **Correção do cenário:** a migração **v23** corrigiu a FK do capítulo que
+  apontava para `localidade_antiga` e causava o erro `no such table` ao gravar
+  o capítulo.
 
 ### Correções e polimento
 
@@ -77,24 +115,34 @@ Histórico das builds de teste do TaleCraft, uma seção por versão/build.
 
 ### Por dentro (notas técnicas)
 
-- Migrações **v17** (`livro_mundo`), **v18** (tipo, imagem e pai da localidade) e
-  **v19** (CHECK ampliado aos 49 tipos, recriando a tabela com as FKs desligadas
-  durante as migrações).
-- **65 comandos Tauri**, **161 testes Rust**, `cargo fmt` e Clippy limpos.
-- Verificadores: `verificar-rf017.mjs` **26/26** e `verificar-rf018.mjs`
-  **17/17**, com regressão completa de RF002 a RF018.
-- Commits: `b2a1df4` (app, RF017), `a0983b0` (specs, RF017), `93596f6` (site,
-  RF017), `bc95bf8` (app, RF018) e `4b75927` (specs, RF018).
+- Migrações **v17** (`livro_mundo`), **v18** (tipo, imagem e pai), **v19**
+  (CHECK dos 49 tipos), **v20** (`mapa`, `mapa_localidade`, `mapa_forma` e
+  `mapa_ligacao`), **v21** (`largura`/`altura` e `mapa_porta`), **v22** (raiz do
+  mundo), **v23** (correção da FK do cenário) e **v24**
+  (`capitulo_cenario`).
+- **70 comandos Tauri**, **183 testes Rust**, `cargo fmt` e Clippy limpos.
+- Verificadores: RF015 **31/31**, RF017 **28/28**, RF018 **17/17** e RF019
+  **43/43**, com regressão dos requisitos anteriores.
+- Commits finais: `558b17e` (app, dados complementares e cenários) e `0443f89`
+  (specs, arquivamento). A rodada anterior de mapas ficou em `4224fa3` (app) e
+  `d36e3f3` (specs).
 
 ### O que testar nesta build
 
 - Associar dois mundos ao mesmo livro e alternar entre as abas.
 - Criar uma cidade, um bairro dentro dela, uma casa dentro do bairro e um quarto
   dentro da casa; conferir a árvore, as miniaturas e as páginas.
-- Enviar uma imagem de localidade e tentar um arquivo grande ou inválido.
-- Escolher o cenário de um capítulo pelo caminho completo.
-- Remover um mundo do livro e conferir o aviso dos capítulos sem cenário.
-- Observar a métrica **Entradas de worldbuilding** no Painel e nos cards.
+- Criar mapas de **Mundo**, **Região**, **Cidade**, **Bairro** e **Prédio/Casa**;
+  arrastar localidades, desenhar polígonos, mover/redimensionar e criar portas.
+- Conferir os mapas na aba **Mapas** do livro e no PDF do Mundo.
+- Abrir um capítulo, usar a aba **Dados Complementares** e salvar/reabrir.
+- Adicionar dois cenários ao mesmo capítulo, remover um e conferir a ordem.
+- Remover um mundo do livro e verificar que só os cenários dele saem.
+
+**Download:** [release v0.1.0-build.4](../../releases/tag/v0.1.0-build.4).
+Nesta primeira publicação, somente os instaladores de **Windows**.
+
+Detalhes em `NOTAS-v0.1.0-build.4.md`.
 
 ---
 
